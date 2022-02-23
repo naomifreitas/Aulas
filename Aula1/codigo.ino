@@ -1,18 +1,23 @@
+const int botao = 6;
+const int ledV = 3;
+const int LedA = 4;
+const int LedAZ = 5;
+
 void setup()
 {
-  pinMode(3, OUTPUT); //Led_vermelho
-  pinMode(4, OUTPUT); //Led_amarelo
-  pinMode(5, OUTPUT); //Led_azul
+  pinMode(LedV, OUTPUT); //Led_vermelho
+  pinMode(LedA, OUTPUT); //Led_amarelo
+  pinMode(LedAZ, OUTPUT); //Led_azul
+  pinMode(botao, INPUT);
 }
+
+int var;
 
 void loop()
 {
-  digitalWrite(3, HIGH); //Led_vermelho
-  digitalWrite(4, HIGH); //Led_amarelo
-  digitalWrite(5,HIGH);
-  delay(250); 
-  digitalWrite(3, LOW); //Led_vermelho
-  digitalWrite(4, LOW); //Led_amarelo
-  digitalWrite(5, LOW); //Led_amarelo
-  delay(250); 
+  var = digitalRead(botao); 
+  if (var)
+  {
+      digitalWrite(LedV, HIGH);
+  }
 }
