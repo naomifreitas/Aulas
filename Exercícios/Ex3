@@ -1,0 +1,36 @@
+
+const int l13 = 13;
+const int l12 = 12;
+const int l11 = 11;
+const int l10 = 10;
+const int l9 = 9;
+  
+void setup()
+{
+  pinMode(l13, OUTPUT);
+  pinMode(l12, OUTPUT);
+  pinMode(l11, OUTPUT);
+  pinMode(l10, OUTPUT);
+  pinMode(l9, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(l13, HIGH);
+    delay(2000);
+  digitalWrite(l12, HIGH);
+  delay(2000);
+  digitalWrite(l11, HIGH);
+  delay(2000);
+  digitalWrite(l10, HIGH);
+  delay(2000);
+  digitalWrite(l9, HIGH);
+  delay(2000);
+  
+  digitalWrite(l13, LOW);
+  digitalWrite(l12, LOW);
+  digitalWrite(l11, LOW);
+  digitalWrite(l10, LOW);
+  digitalWrite(l9, LOW);
+  delay(3000); 
+}
